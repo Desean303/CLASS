@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num = 100;  
+    int* ptr = &num; // An integer variable
+    int* ptr;    
+    
+    *ptr = 200;
+    cout << "Original value of num: " << num << endl;        // Print the value of var
+    cout << "Original value using pointer: " << num << endl;
+
+    
+    // Print the address of var
+    cout << "New value of num:  " << ptr << endl;  // Print the address stored in ptr
+    cout << "New value using pointer: " << *ptr << endl; // Dereference ptr to get the value at the address it points to
+
+    return 0;
+}
